@@ -10,12 +10,11 @@ import ru.job4j.chess.firuges.Figure;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
-import static org.junit.matchers.JUnitMatchers.containsString;
 
 public class BishopBlackTest {
 
     @Test
-    public void sourcePositionIsCorrect () {
+    public void sourcePositionIsCorrect() {
         BishopBlack bishopBlackSource = new BishopBlack(Cell.B1);
         Cell source = bishopBlackSource.position();
         Cell expected = Cell.B1;
@@ -40,7 +39,8 @@ public class BishopBlackTest {
     }
 
     @Test
-    public void freeWayOfBishopBlackFromC1ToG5() throws OccupiedCellException, FigureNotFoundException {
+    public void freeWayOfBishopBlackFromC1ToG5()
+            throws OccupiedCellException, FigureNotFoundException {
         Logic logic = new Logic();
         logic.add(new BishopBlack(Cell.C1));
         logic.add(new KingBlack(Cell.G4));
@@ -48,7 +48,8 @@ public class BishopBlackTest {
     }
 
     @Test
-    public void freeWayOfBishopBlackFromG5ToC1() throws OccupiedCellException, FigureNotFoundException {
+    public void freeWayOfBishopBlackFromG5ToC1()
+            throws OccupiedCellException, FigureNotFoundException {
         Logic logic = new Logic();
         logic.add(new BishopBlack(Cell.G5));
         logic.add(new KingBlack(Cell.G4));
@@ -56,7 +57,8 @@ public class BishopBlackTest {
     }
 
     @Test
-    public void freeWayOfBishopBlackFromE1ToA5() throws OccupiedCellException, FigureNotFoundException {
+    public void freeWayOfBishopBlackFromE1ToA5()
+            throws OccupiedCellException, FigureNotFoundException {
         Logic logic = new Logic();
         logic.add(new BishopBlack(Cell.E1));
         logic.add(new KingBlack(Cell.B3));
@@ -64,7 +66,8 @@ public class BishopBlackTest {
     }
 
     @Test
-    public void freeWayOfBishopBlackFromA5ToE1() throws OccupiedCellException, FigureNotFoundException {
+    public void freeWayOfBishopBlackFromA5ToE1()
+            throws OccupiedCellException, FigureNotFoundException {
         Logic logic = new Logic();
         logic.add(new BishopBlack(Cell.A5));
         logic.add(new KingBlack(Cell.B3));
@@ -72,7 +75,7 @@ public class BishopBlackTest {
     }
 
     @Test
-    public void otherFigureOnTheWayOfBishopBlackFromC1ToG5() throws OccupiedCellException, FigureNotFoundException {
+    public void otherFigureOnTheWayOfBishopBlackFromC1ToG5() throws FigureNotFoundException {
         boolean occupiedCellException = false;
         Logic logic = new Logic();
         logic.add(new BishopBlack(Cell.C1));
@@ -86,7 +89,7 @@ public class BishopBlackTest {
     }
 
     @Test
-    public void otherFigureOnTheWayOfBishopBlackFromG5ToC1() throws OccupiedCellException, FigureNotFoundException {
+    public void otherFigureOnTheWayOfBishopBlackFromG5ToC1() throws FigureNotFoundException {
         boolean occupiedCellException = false;
         Logic logic = new Logic();
         logic.add(new BishopBlack(Cell.G5));
@@ -100,7 +103,7 @@ public class BishopBlackTest {
     }
 
     @Test
-    public void otherFigureOnTheWayOfBishopBlackFromE1ToA5() throws OccupiedCellException, FigureNotFoundException {
+    public void otherFigureOnTheWayOfBishopBlackFromE1ToA5() throws FigureNotFoundException {
         boolean occupiedCellException = false;
         Logic logic = new Logic();
         logic.add(new BishopBlack(Cell.E1));
@@ -113,9 +116,8 @@ public class BishopBlackTest {
         assertTrue(occupiedCellException);
     }
 
-
     @Test
-    public void otherFigureOnTheWayOfBishopBlackFromA5ToE1() throws OccupiedCellException, FigureNotFoundException {
+    public void otherFigureOnTheWayOfBishopBlackFromA5ToE1() throws FigureNotFoundException {
         boolean occupiedCellException = false;
         Logic logic = new Logic();
         logic.add(new BishopBlack(Cell.A5));
