@@ -23,8 +23,7 @@ public class BishopBlack implements Figure {
                     String.format("Could not way by diagonal from %s to %s", position, dest)
             );
         }
-        int size = (Math.abs(dest.getX() - position.getX())
-                + Math.abs(position.getY() - dest.getY())) / 2;
+        int size = (Math.abs(dest.getX() - position.getX()));
         Cell[] steps = new Cell[size];
         int deltaX = position.getX() > dest.getX() ? -1 : 1;
         int deltaY = position.getY() > dest.getY() ? -1 : 1;
