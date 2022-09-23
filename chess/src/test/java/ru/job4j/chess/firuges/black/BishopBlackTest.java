@@ -8,7 +8,6 @@ import ru.job4j.chess.firuges.Figure;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
-
 public class BishopBlackTest {
 
     @Test
