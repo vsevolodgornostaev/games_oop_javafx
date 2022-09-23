@@ -24,7 +24,7 @@ public final class Logic {
         for (Figure figure: figures) {
             for (Cell step: steps) {
                 if (figure != null && figure.position().equals(step)) {
-                    throw new OccupiedCellException("Ячейка занята");
+                    throw new OccupiedCellException("The board is occupied.");
                 }
             }
         }
@@ -43,6 +43,6 @@ public final class Logic {
                 return index;
             }
         }
-        throw new FigureNotFoundException("Фигуры нет на клетке");
+        throw new FigureNotFoundException("Figure not found on the board.");
     }
 }
