@@ -1,5 +1,6 @@
 package ru.job4j.chess;
 
+import org.assertj.core.api.AbstractStringAssert;
 import org.junit.Test;
 import ru.job4j.chess.firuges.Cell;
 import ru.job4j.chess.firuges.black.BishopBlack;
@@ -78,7 +79,8 @@ public class LogicTest {
         ImpossibleMoveException exception = assertThrows(ImpossibleMoveException.class, () -> {
             logic.move(position, dest);
         });
-        assertThat(exception.getMessage()).isEqualTo(String.format("Could not way by diagonal from %s to %s", position, dest));
+        assertThat(exception.getMessage()).isEqualTo(
+                String.format("Could not way by diagonal from %s to %s", position, dest));
     }
 
     @Test
@@ -91,7 +93,8 @@ public class LogicTest {
         ImpossibleMoveException exception = assertThrows(ImpossibleMoveException.class, () -> {
             logic.move(position, dest);
         });
-        assertThat(exception.getMessage()).isEqualTo(String.format("Could not way by diagonal from %s to %s", position, dest));
+        assertThat(exception.getMessage()).isEqualTo(
+                String.format("Could not way by diagonal from %s to %s", position, dest));
     }
 
     @Test
@@ -104,7 +107,8 @@ public class LogicTest {
         ImpossibleMoveException exception = assertThrows(ImpossibleMoveException.class, () -> {
             logic.move(position, dest);
         });
-        assertThat(exception.getMessage()).isEqualTo(String.format("Could not way by diagonal from %s to %s", position, dest));
+        assertThat(exception.getMessage()).isEqualTo(
+                String.format("Could not way by diagonal from %s to %s", position, dest));
     }
 
     @Test
@@ -117,7 +121,8 @@ public class LogicTest {
         ImpossibleMoveException exception = assertThrows(ImpossibleMoveException.class, () -> {
             logic.move(position, dest);
         });
-        assertThat(exception.getMessage()).isEqualTo(String.format("Could not way by diagonal from %s to %s", position, dest));
+        assertThat(exception.getMessage()).isEqualTo(
+                String.format("Could not way by diagonal from %s to %s", position, dest));
     }
 
     @Test
@@ -130,7 +135,8 @@ public class LogicTest {
         ImpossibleMoveException exception = assertThrows(ImpossibleMoveException.class, () -> {
             logic.move(position, dest);
         });
-        assertThat(exception.getMessage()).isEqualTo(String.format("Could not way by diagonal from %s to %s", position, dest));
+        assertThat(exception.getMessage()).isEqualTo(
+                String.format("Could not way by diagonal from %s to %s", position, dest));
     }
 
     @Test
@@ -143,7 +149,8 @@ public class LogicTest {
         ImpossibleMoveException exception = assertThrows(ImpossibleMoveException.class, () -> {
             logic.move(position, dest);
         });
-        assertThat(exception.getMessage()).isEqualTo(String.format("Could not way by diagonal from %s to %s", position, dest));
+        assertThat(exception.getMessage()).isEqualTo(
+                String.format("Could not way by diagonal from %s to %s", position, dest));
     }
 
     @Test
@@ -156,7 +163,8 @@ public class LogicTest {
         ImpossibleMoveException exception = assertThrows(ImpossibleMoveException.class, () -> {
             logic.move(position, dest);
         });
-        assertThat(exception.getMessage()).isEqualTo(String.format("Could not way by diagonal from %s to %s", position, dest));
+        assertThat(exception.getMessage()).isEqualTo(
+                String.format("Could not way by diagonal from %s to %s", position, dest));
     }
 
     @Test
@@ -169,6 +177,7 @@ public class LogicTest {
         ImpossibleMoveException exception = assertThrows(ImpossibleMoveException.class, () -> {
             logic.move(position, dest);
         });
-        assertThat(exception.getMessage()).isEqualTo(String.format("Could not way by diagonal from %s to %s", position, dest));
+        assertThat(exception.getMessage()).isEqualTo(
+                String.format("Could not way by diagonal from %s to %s", position, dest));
     }
 }
